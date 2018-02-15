@@ -2,12 +2,22 @@ Rails.application.routes.draw do
   
   get 'profiles/show'
 
+  # Use custom devise registration controller
   devise_for :users, :controllers => { registrations: 'registrations' }
+  
   resources :posts do
     resources :comments
   end
+
   root 'posts#index'
+  
+  # Custom route to user profile using user name
   get ':user_name', to: 'profiles#show', as: :profile
+  # Custom route to edit user profile (user_name/edit)
+  get ':user_name/edit', to: 'profiles#edit', as: :edit_profile
+  # Custom route to update profile
+  patch ':user_name/edit', to: 'profiles#update', as: :update_profile
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
