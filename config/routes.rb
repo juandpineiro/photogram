@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
   
+  get 'profiles/show'
+
   devise_for :users, :controllers => { registrations: 'registrations' }
   resources :posts do
     resources :comments
   end
   root 'posts#index'
+  get ':user_name', to: 'profiles#show', as: :profile
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
