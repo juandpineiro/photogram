@@ -15,6 +15,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 
 gem 'paperclip', '~> 5.2.0'
+gem 'aws-sdk', '~> 2.3'
 gem 'simple_form'
 gem 'bootstrap-sass'
 gem 'devise'
@@ -49,5 +50,10 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+end
+
+group :production do
+  gem 'pg', '~> 0.11'
+  gem 'rails_12factor'
 end
 
