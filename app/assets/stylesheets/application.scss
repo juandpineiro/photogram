@@ -255,12 +255,13 @@ body {
   height: 152px;
   width: 152px;
 }
+
 .user-name-and-follow {
-  display: inline;
+  display: inline-block;
 }
 
 .profile-user-name {
-  display: inline;
+  display: inline-block;
 }
 
 .edit-button {
@@ -270,5 +271,6 @@ body {
 }
 
 .profile-bio {
+  text-align: left;
   margin-top: 20px;
 }

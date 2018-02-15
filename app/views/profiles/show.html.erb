@@ -16,14 +16,14 @@
           <% end %>
         </span>
       </div>
-    </div>
-    <p class="profile-bio">
+      <p class="profile-bio">
       <%= @user.bio %>
     </p>
     <div class="user-statistics">
       <p>
         <%= pluralize @user.posts.count, 'post' %>
       </p>
+    </div>
     </div>
   </div>
 </div>
