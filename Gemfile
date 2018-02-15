@@ -18,6 +18,7 @@ gem 'aws-sdk', '~> 2.3'
 gem 'simple_form'
 gem 'bootstrap-sass'
 gem 'devise'
+gem 'kaminari'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
