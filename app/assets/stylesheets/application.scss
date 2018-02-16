@@ -242,7 +242,12 @@ body {
 
 /* ## Edit profile ## */
 #user_avatar {
-  margin: 20px auto;
+  padding: 1em;
+  margin: 0px auto;
+}
+
+#user_bio {
+  border: 1px solid gray;
 }
 
 /* ## Profile page ## */
@@ -273,4 +278,10 @@ body {
 .profile-bio {
   text-align: left;
   margin-top: 20px;
+}
+
+/* ## Likes ## */
+.likes {
+  margin-top: 20px;
+  margin-bottom: 7px;
 }

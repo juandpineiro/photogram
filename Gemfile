@@ -19,6 +19,7 @@ gem 'simple_form'
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'kaminari'
+gem 'acts_as_votable'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
